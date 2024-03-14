@@ -8,8 +8,8 @@ import Footer from "@/components/footer/page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Next With Redux",
-    description: "Create app in next JS with redux for statemanagement",
+    title: "Next - Zustand",
+    description: "Create app in next JS with zustand for statemanagement",
 };
 
 interface RootLayoutProps {
@@ -22,7 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <html lang="en">
             <body className={inter.className}>
                 <Header />
-                <div className="min-h-[calc(100vh-90px)]">
+                <div className="min-h-[100vh] pt-[50px] bg-white">
                     {children}
                 </div>
                 <Footer />
