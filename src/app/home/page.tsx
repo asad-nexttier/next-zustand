@@ -1,12 +1,12 @@
 import React from 'react'
 import ProductCard from '@/components/productCard/page'
-import { products } from '@/data/prooducts'
+import { products } from '@/data/products'
 
 const Home = () => {
 
     const ProductItems = () => {
-        return products.map((item, index) => {
-            return <ProductCard key={index} data={item} />
+        return products.map((item: any, index: number) => {
+            return <ProductCard key={index} product={item} />
         })
     }
 
